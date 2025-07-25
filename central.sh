@@ -2,4 +2,6 @@
 
 echo "newlinejjj"
 
-echo "lolzz"
+echo "lolzzhhsalso"
+
+echo "newline"
