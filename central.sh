@@ -3,3 +3,5 @@
 echo "newlinejjj"
 
 echo "lolzzhhsalso"
+
+echo "newline"
