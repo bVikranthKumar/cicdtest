@@ -9,6 +9,7 @@ PIPELINE_FILES_MAP["vikranth-cicd-pipeline-2"]="somefile.txt"
 
 # Get changed files in the latest commit
 CHANGED_FILES=$(git show --pretty="" --name-only HEAD)
+echo "${CHANGED_FILES[@]}"
 
 # Loop over pipelines and check their file patterns
 for pipeline in "${!PIPELINE_FILES_MAP[@]}"; do
