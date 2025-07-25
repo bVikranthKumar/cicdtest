@@ -1,4 +1,4 @@
-#!/usr/local/bin/bash
+#!/bin/bash
 
 declare -A PIPELINE_FILES_MAP # Declare associative array: pipeline → space-separated list of file patterns
 declare -A TRIGGERED_PIPELINES=() # Track triggered pipelines
