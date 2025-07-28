@@ -12,7 +12,7 @@ PIPELINE_FILES_MAP["vikranth-cicd-pipeline-2"]="somefile.txt"
 
 # excludes list
 
-PIPELINE_EXCLUDE_FILES_MAP["vikranth-cicd-pipeline-3"]="newdir/abcd"
+# PIPELINE_EXCLUDE_FILES_MAP["vikranth-cicd-pipeline-3"]="newdir/abcd"
 
 # trigger always
 
@@ -71,7 +71,7 @@ done
 # Print and trigger
 for pipeline in "${!TRIGGERED_PIPELINES[@]}"; do
   echo "Triggering $pipeline..."
-  # aws codebuild start-build --project-name "$pipeline"
+  aws codebuild start-build --project-name "$pipeline"
 done
 
 # If nothing matched
